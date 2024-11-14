@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задание 5</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>Задание 5<center/>
+<div class="cont">
+    <div class="col-start-2 lg:col-start-3 col-span-4 lg:col-span-2 flex flex-col">
+        <form class="flex flex-col">
+            <label class="text-center flex flex-col">
+                 Количество предметов:
+                 <input id="quantityInput" class="px-1 my-1" type="number">
+            </label>
+            <label class="flex flex-col items-center">
+		Предмет:
+                <select id="select">
+                    <option value="product1">Телефон</option>
+                    <option value="product2">Смарт-часы</option>
+                    <option value="product3">Компьютер</option>
+		    <option value="product4">Наушники</option>
+                    <option value="product5">Клавиатура</option>
+                </select>
+            </label>
+        </form>
+        <button id="calculate">Посчитать стоимость</button>
+        <div id="answerDiv" class="px-5 text-center bg-orange-200"></div>
+    </div>
+</div>
+</body>
+</html>
